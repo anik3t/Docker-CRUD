@@ -1,0 +1,186 @@
+{
+	"info": {
+		"_postman_id": "8f9e302b-820c-4337-865d-10022c5e7685",
+		"name": "Docker Image using postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:5000/delete/18107",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ID\": 18107,\n    \"Name\": \"Aniket Chavan\",\n    \"Age\": 28,\n    \"Department\": \"PUSCD\",\n    \"Subject\": \"OS\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/delete/18107",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"delete",
+						"18107"
+					]
+				},
+				"description": "DELETE the roll no of user in database"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ID\": 18107,\n    \"Name\": \"Aniket Chavan\",\n    \"Age\": 28,\n    \"Department\": \"PUSCD\",\n    \"Subject\": \"OS\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/users",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"users"
+					]
+				},
+				"description": "show the all users in database"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000"
+				},
+				"description": "it checks connection is done or not"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/add",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/add",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"add"
+					]
+				},
+				"description": "add the user to database"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/user/18107",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ID\": 18107,\n    \"Name\": \"Aniket Chavan\",\n    \"Age\": 28,\n    \"Department\": \"PUSCD\",\n    \"Subject\": \"TCS\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/user/18107",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"18205"
+					]
+				},
+				"description": "show the info"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ID\": 18205,\n    \"Name\": \"Aniket Chavan\",\n    \"Age\": 28,\n    \"Department\": \"PUSCD\",\n    \"Subject\": \"DevOps\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/update",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"update"
+					]
+				},
+				"description": "update the user info of database"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
